@@ -1,0 +1,67 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+
+</head>
+<body>
+    <div id="game">Trivia Game</div>
+    <!--Button to start trivia game-->
+    <button type="button" class="btn btn-success start">Start</button>
+    <!--Displays time remaining countdown for each question-->
+    <div id="time-remaining"></div>
+    <!-- Displays question -->
+    <div id="questions">
+        <ol>
+        <li>"What year did Nintendo start making video games?"</li> 
+            <form onsubmit="endGame();">  
+                    <input class="input" type="radio" name="choices" value="true"> 1975<br>
+                    <input class="input" type="radio" name="choices" value="false"> 1987<br>
+                    <input class="input" type="radio" name="choices" value="false"> 2010<br>
+                    <input class="input" type="radio" name="choices" value="false"> 1983<br>
+            </form> 
+        <li>"In what game did Mario make his first appearance?"</li>
+            <form onsubmit="endGame();">  
+                    <input class="input" type="radio" name="choices" value="false"> Super Mario Bros.<br>
+                    <input class="input" type="radio" name="choices" value="true"> Donkey Kong<br>
+                    <input class="input" type="radio" name="choices" value="false"> Duck Hunt<br>
+                    <input class="input" type="radio" name="choices" value="false"> Mario Kart 64<br>
+            </form>    
+        <li>"What was Mario's name before his name was Mario?"</li>
+            <form onsubmit="endGame();">  
+                    <input class="input" type="radio" name="choices" value="false"> Punchman<br>
+                    <input class="input" type="radio" name="choices" value="false"> Plumber Man<br>
+                    <input class="input" type="radio" name="choices" value="true"> Jumpman<br>
+                    <input class="input" type="radio" name="choices" value="false"> Carpenter Man<br>
+            </form> 
+        <li> "What did Nintendo do before video games?"</li>
+            <form onsubmit="endGame();">  
+                    <input class="input" type="radio" name="choices" value="true"> Playing Cards<br>
+                    <input class="input" type="radio" name="choices" value="false"> Love Hotels<br>
+                    <input class="input" type="radio" name="choices" value="false"> Baseball<br>
+                    <input class="input" type="radio" name="choices" value="false"> Watches<br>
+            </form> 
+        <li> "What is the name of the enemy that kidnaps Princess Peach?"</li>
+            <form onsubmit="endGame();">  
+                    <input class="input" type="radio" name="choices" value="false"> Kamek<br>
+                    <input class="input" type="radio" name="choices" value="false"> Lakitu<br>
+                    <input class="input" type="radio" name="choices" value="true"> Bowser<br>
+                    <input class="input" type="radio" name="choices" value="false"> Yoshi<br>
+            </form> 
+    </ol>
+        <input id="submit" type="submit" value="Submit">
+    </div>
+    
+    <!--Displays results after each question and final results of game-->
+    <div id="results"></div>
+
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>
